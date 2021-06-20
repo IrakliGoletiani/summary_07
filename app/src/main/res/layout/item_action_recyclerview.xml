@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyTeam1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vDivider"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPlayer1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="18dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPlayer11"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="@id/ivPlayer1"
+            app:layout_constraintTop_toBottomOf="@id/ivPlayer1" />
+
+        <TextView
+            android:id="@+id/tvTeam1Minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="12'"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/ivPlayer1"
+            app:layout_constraintTop_toTopOf="@id/ivPlayer1" />
+
+        <TextView
+            android:id="@+id/tvTeam1Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Goals by"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/tvTeam1Minute"
+            app:layout_constraintTop_toTopOf="@id/tvTeam1Minute" />
+
+        <TextView
+            android:id="@+id/tvPlayer1Name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Messi L."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tvTeam1Minute"
+            app:layout_constraintTop_toBottomOf="@id/tvTeam1Minute" />
+
+        <TextView
+            android:id="@+id/tvPlayer11Name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Messi L."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tvPlayer1Name"
+            app:layout_constraintTop_toBottomOf="@id/tvPlayer1Name" />
+
+        <ImageView
+            android:id="@+id/ivTeam1Action"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivTeam11Action"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="@id/ivTeam1Action"
+            app:layout_constraintTop_toBottomOf="@id/ivTeam1Action" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#e4e4e4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDividerCircle"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:src="@drawable/ic_circle"
+        android:textColor="#b0b0b0"
+        app:layout_constraintBottom_toBottomOf="@id/vDivider"
+        app:layout_constraintEnd_toEndOf="@id/vDivider"
+        app:layout_constraintStart_toStartOf="@id/vDivider"
+        app:layout_constraintTop_toTopOf="@id/vDivider" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyTeam2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vDivider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivTeam2Action"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivTeam22Action"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:layout_constraintStart_toStartOf="@id/ivTeam2Action"
+            app:layout_constraintTop_toBottomOf="@id/ivTeam2Action" />
+
+        <ImageView
+            android:id="@+id/ivPlayer2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="18dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPlayer22"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="@id/ivPlayer2"
+            app:layout_constraintTop_toBottomOf="@id/ivPlayer2" />
+
+        <TextView
+            android:id="@+id/tvTeam2Minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="12'"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@id/tvTeam2Action"
+            app:layout_constraintTop_toTopOf="@id/tvTeam2Action" />
+
+        <TextView
+            android:id="@+id/tvTeam2Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Goals by"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@id/ivPlayer2"
+            app:layout_constraintTop_toTopOf="@id/ivPlayer2" />
+
+        <TextView
+            android:id="@+id/tvPlayer2Name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Cucho"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/tvTeam2Action"
+            app:layout_constraintTop_toBottomOf="@id/tvTeam2Action" />
+
+        <TextView
+            android:id="@+id/tvPlayer22Name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Cucho"
+            android:gravity="end"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tvPlayer2Name"
+            app:layout_constraintTop_toBottomOf="@id/tvPlayer2Name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

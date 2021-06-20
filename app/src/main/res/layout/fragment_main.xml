@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#81C784">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2 September 2018"
+                android:textColor="#00aa7b"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/tvStadium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStadium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Camp Nou Stadium"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivTeam1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/tvDate"
+                app:layout_constraintTop_toBottomOf="@id/tvDate"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvTeam1Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                tools:text="5"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivTeam1"
+                app:layout_constraintEnd_toStartOf="@id/tvDivider"
+                app:layout_constraintTop_toTopOf="@id/ivTeam1" />
+
+            <TextView
+                android:id="@+id/tvDivider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivTeam1"
+                app:layout_constraintEnd_toStartOf="@id/ivTeam2"
+                app:layout_constraintStart_toEndOf="@id/ivTeam1"
+                app:layout_constraintTop_toTopOf="@id/ivTeam1" />
+
+            <TextView
+                android:id="@+id/tvTeam2Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="2"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivTeam2"
+                app:layout_constraintStart_toEndOf="@id/tvDivider"
+                app:layout_constraintTop_toTopOf="@id/ivTeam2" />
+
+            <TextView
+                android:id="@+id/tvMatchTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="79'"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/tvDivider"
+                app:layout_constraintStart_toStartOf="@id/tvDivider"
+                app:layout_constraintTop_toBottomOf="@id/tvDivider" />
+
+            <ImageView
+                android:id="@+id/ivTeam2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                tools:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="@id/tvStadium"
+                app:layout_constraintTop_toBottomOf="@id/tvStadium" />
+
+            <TextView
+                android:id="@+id/tvTeam1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/ivTeam1"
+                app:layout_constraintStart_toStartOf="@id/ivTeam1"
+                app:layout_constraintTop_toBottomOf="@id/ivTeam1"
+                tools:text="Barcelona" />
+
+            <TextView
+                android:id="@+id/tvTeam2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="Huesca"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/ivTeam2"
+                app:layout_constraintStart_toStartOf="@id/ivTeam2"
+                app:layout_constraintTop_toBottomOf="@id/ivTeam2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOverView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTeam1Name">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvOverView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:textColor="#00aa7b"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvStatistics"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvStatistics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Statistic"
+                        android:textColor="#b1b1b1"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvLineUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Line Up"
+                        android:textColor="#b1b1b1"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvStatistics"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvTeam1BallPossession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="70%"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/cvOverView"
+                app:layout_constraintTop_toBottomOf="@id/cvOverView" />
+
+            <TextView
+                android:id="@+id/tvBallPossession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Ball Possession"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvOverView" />
+
+            <TextView
+                android:id="@+id/tvTeam2BallPossession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:text="30%"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/cvOverView"
+                app:layout_constraintTop_toBottomOf="@id/cvOverView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                tools:listitem="@layout/item_action_recyclerview"
+                app:layout_constraintTop_toBottomOf="@id/tvBallPossession" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>
